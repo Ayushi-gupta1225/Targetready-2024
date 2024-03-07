@@ -1,8 +1,6 @@
 package org.targetindia.day1.word;
 import java.util.Scanner;
-
 public class numtowords {
-
     private static final String[] ones = {"", "One", "Two", "Three", "Four", "Five",
             "Six", "Seven", "Eight", "Nine"};
     private static final String[] teens = {"Ten", "Eleven", "Twelve", "Thirteen",
