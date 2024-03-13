@@ -6,6 +6,7 @@ import lombok.ToString;
 
 @Getter
 @Setter
+
 @ToString(callSuper = true)
 public class Student extends Person {
     private String program;
