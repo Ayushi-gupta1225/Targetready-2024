@@ -8,6 +8,7 @@ public class MainProgram {
         shapes[0] = new Circle(5.0, "Red", true);
         shapes[1] = new Rectangle(3.0, 4.0, "Blue", false);
         shapes[2] = new Square(6.0, "Green", true);
+        shapes[3]=new Circle(10,"Green", true);
 
         try{
         for (Shape shape : shapes) {
