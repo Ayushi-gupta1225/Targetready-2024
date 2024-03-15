@@ -8,6 +8,7 @@ public class DaoException extends Exception{
         super(message);
     }
 
+
     public DaoException(Throwable cause) {
         super(cause);
     }
