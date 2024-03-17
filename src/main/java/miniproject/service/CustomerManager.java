@@ -3,6 +3,7 @@ package miniproject.service;
 
 import miniproject.dao.CustomerDao;
 import miniproject.dao.DaoException;
+import miniproject.dao.DaoFactory;
 import miniproject.model.Customer;
 
 import java.util.List;
