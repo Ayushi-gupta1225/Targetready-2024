@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CustomerDao {
     // this is a standard interface to provide CRUD and Query operations on Customer object
-
+    // it is a interface as it contain on fxn declaration not defination
     // CRUD
 
     public Customer save(Customer customer) throws DaoException;
