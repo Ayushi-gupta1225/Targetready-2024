@@ -1,10 +1,10 @@
 package miniproject.dao;
 
 import miniproject.model.Customer;
-import miniproject.utils.IdGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ArrayListCustomerDao implements CustomerDao {
 
@@ -75,7 +75,7 @@ public class ArrayListCustomerDao implements CustomerDao {
 
         this.customers = this.customers.stream()
                 .filter(c -> c.getId() != id)
-                .toList();
+                .collect(Collectors.toList());
 
         return customer;
     }
@@ -108,6 +108,6 @@ public class ArrayListCustomerDao implements CustomerDao {
         return customers
                 .stream()
                 .filter(c -> c.getCity().equals(city))
-                .toList();
+                .collect(Collectors.toList());
     }
 }
