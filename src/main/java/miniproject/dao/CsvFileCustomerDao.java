@@ -1,17 +1,18 @@
 package miniproject.dao;
 
+import lombok.extern.slf4j.Slf4j;
+import lombok.var;
 import miniproject.model.Customer;
 import miniproject.utils.IdGenerator;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Slf4j
 public class CsvFileCustomerDao implements CustomerDao {
@@ -139,7 +140,7 @@ public class CsvFileCustomerDao implements CustomerDao {
     @Override
     public List<Customer> getAll() throws DaoException {
         try {
-            return customerMap.values().stream().toList();
+            return customerMap.values().stream().collect(Collectors.toList());
         } catch (Exception e) {
             throw new DaoException(e);
         }
@@ -152,7 +153,7 @@ public class CsvFileCustomerDao implements CustomerDao {
                     .stream()
                     .filter(customer -> customer.getEmail().equals(email))
                     .findFirst()
-                    .orElseThrow();
+                   .orElseThrow();
         } catch (Exception e) {
             throw new DaoException(e);
         }
@@ -177,7 +178,7 @@ public class CsvFileCustomerDao implements CustomerDao {
             return customerMap.values()
                     .stream()
                     .filter(customer -> customer.getCity().equals(city))
-                    .toList();
+                    .collect(Collectors.toList());
         } catch (Exception e) {
             throw new DaoException(e);
         }
