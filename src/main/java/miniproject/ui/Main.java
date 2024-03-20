@@ -78,6 +78,7 @@ public class Main {
             String email = KeyboardUtil.getString("Email : ");
             String phone = KeyboardUtil.getString("Phone : ");
 
+
             // create customer object
             Customer customer = new Customer(0, name, city, email, phone);
 
