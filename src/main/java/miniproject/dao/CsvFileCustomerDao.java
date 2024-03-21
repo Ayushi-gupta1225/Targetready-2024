@@ -153,7 +153,7 @@ public class CsvFileCustomerDao implements CustomerDao {
                     .stream()
                     .filter(customer -> customer.getEmail().equals(email))
                     .findFirst()
-                   .orElseThrow();
+                   .orElseThrow(null);
         } catch (Exception e) {
             throw new DaoException(e);
         }
@@ -166,7 +166,7 @@ public class CsvFileCustomerDao implements CustomerDao {
                     .stream()
                     .filter(customer -> customer.getPhone().equals(phone))
                     .findFirst()
-                    .orElseThrow();
+                    .orElseThrow(null);
         } catch (Exception e) {
             throw new DaoException(e);
         }
