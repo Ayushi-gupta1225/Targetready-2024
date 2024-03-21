@@ -9,7 +9,7 @@ public class DyanamicFileRead {
         FileInputStream fis=new FileInputStream("abc.txt");
         int data;
         while((data=fis.read())!=-1){
-            System.out.println("data :" +data);
+            System.out.println("data :" +data + "\t"+ (char)data);
         }
         fis.close();
     }
