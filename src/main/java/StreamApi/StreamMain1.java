@@ -30,6 +30,27 @@ public class StreamMain1 {
       List<Integer> newstremlist=  stream.filter(i->i%2==0).collect(Collectors.toList());
         System.out.println(newstremlist);
 
+        //examples by sir
+         List<Integer> nums = List.of(120, 390, 48, 38, 120, 392, 48, 38, 22, 382, 572, 7772, 234);
+
+        // first 5 of the numbers:
+        nums.stream()
+                .limit(5)
+                .forEach(System.out::println); // .forEach(num -> System.out.println(num));
+
+        System.out.println();
+        nums.stream()
+                .skip(5)
+                .limit(3)
+                .forEach(System.out::println); // .forEach(num -> System.out.println(num));
+
+        System.out.println();
+        nums.stream()
+                .filter(num -> num % 2 == 1)
+                .findFirst()
+                .ifPresentOrElse(num -> System.out.println("first odd number is " + num), () -> System.out.println("No odd number found"));
+    
+
         }
 
 }
