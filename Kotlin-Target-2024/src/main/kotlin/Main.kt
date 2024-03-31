@@ -52,4 +52,20 @@ fun main() {
     }
 
     println("Today is $dayName")
+
+    for (i in 1..10) {
+        if (i % 2 == 0) {
+            continue
+        }
+        println(i)
+    }
+
+// Iterating Over Map Entries:
+// Kotlin provides a convenient way to iterate over map entries using the for loop:
+
+    val map = mapOf("A" to 1, "B" to 2, "C" to 3)
+
+    for ((key, value) in map) {
+        println("$key -> $value")
+    }
 }
