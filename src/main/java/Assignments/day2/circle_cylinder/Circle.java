@@ -1,4 +1,4 @@
-package org.targetindia.day2.circle_cylinder;
+package Assignments.day2.circle_cylinder;
 
 public class Circle {
         protected double radius;

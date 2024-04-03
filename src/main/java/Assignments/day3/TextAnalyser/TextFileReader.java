@@ -1,4 +1,4 @@
-package org.targetindia.day3.TextAnalyser;
+package Assignments.day3.TextAnalyser;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

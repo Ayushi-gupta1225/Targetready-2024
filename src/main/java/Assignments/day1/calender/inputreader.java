@@ -1,4 +1,4 @@
-package org.targetindia.day1.calender;
+package Assignments.day1.calender;
 import java.util.Scanner;
 public class inputreader {
     public static int[] readInput() {

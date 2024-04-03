@@ -1,4 +1,4 @@
-package org.targetindia.day1.calender;
+package Assignments.day1.calender;
 
 public class calendergenerator {
 
@@ -101,11 +101,11 @@ public class calendergenerator {
                     "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
 
             // Define array for the number of days in each month
-            int[] daysInMonth = {31, dateutilities.getDaysInMonth(year, month), 31, 30, 31, 30,
+            int[] daysInMonth = {31, org.targetindia.day1.calender.dateutilities.getDaysInMonth(year, month), 31, 30, 31, 30,
                     31, 31, 30, 31, 30, 31};
 
             // Check if the current year is a leap year and update the number of days in February
-            if (dateutilities.isLeapYear(year)) {
+            if (org.targetindia.day1.calender.dateutilities.isLeapYear(year)) {
                 daysInMonth[1] = 29; // February has 29 days in a leap year
             }
 

@@ -1,4 +1,4 @@
-package org.targetindia.day2.student_staff;
+package Assignments.day2.student_staff;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

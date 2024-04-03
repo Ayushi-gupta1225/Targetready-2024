@@ -1,4 +1,4 @@
-package org.targetindia.day1.calender;
+package Assignments.day1.calender;
 
 public class Main {
     public static void main(String[] args) {

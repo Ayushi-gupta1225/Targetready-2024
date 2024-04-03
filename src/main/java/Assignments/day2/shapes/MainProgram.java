@@ -1,4 +1,4 @@
-package org.targetindia.day2.shapes;
+package Assignments.day2.shapes;
 
 
 public class MainProgram {

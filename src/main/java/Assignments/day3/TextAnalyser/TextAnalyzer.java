@@ -1,4 +1,4 @@
-package org.targetindia.day3.TextAnalyser;
+package Assignments.day3.TextAnalyser;
 
 import java.util.Arrays;
 

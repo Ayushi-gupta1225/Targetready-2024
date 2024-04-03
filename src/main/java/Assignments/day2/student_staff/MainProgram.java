@@ -1,4 +1,4 @@
-package org.targetindia.day2.student_staff;
+package Assignments.day2.student_staff;
 
 public class MainProgram {
         public static void main(String[] args) {
