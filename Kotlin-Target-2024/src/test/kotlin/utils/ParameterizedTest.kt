@@ -13,6 +13,7 @@ class ParameterizedTest (val input:String , val expectedval:Boolean) {
     @Test
     fun test() {
         val Helper = helper()
+
         val result = Helper.isPalindrome(input)
         assertEquals(expectedval, result)
     }
