@@ -1,4 +1,4 @@
-package Coroutines
+package org.example.Coroutines
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
