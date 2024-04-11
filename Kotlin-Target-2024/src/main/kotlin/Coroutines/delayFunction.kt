@@ -21,14 +21,18 @@ fun  main(){
     //solution to use delay outsode is to use runblocking n keep delaf yxn in that
 
     runBlocking { //creates a coroutine h=that blox=cks the current main thread
-        delay(2000) //wait for co
+        delay(2000) //wait for coroutine to finish
     }
    // Thread.sleep(2000)
     println("main thread ends: ${Thread.currentThread().name}")
 
 }
 
-//SUSPEND fxn -- a fxn with suspend modifie is know as suspending fxn
+//SUSPEND fxn -- a fxn with suspend modifier is know as suspending fxn
 //            -- these fxns are only allowed to be called from a coroutine
 //or from another suspending fxn
 //they cannot be called from outside a coroutine
+//runblocking do the fxn of thread.sleep
+//GlobalScope.launch() is non-blocking in nature means main
+//      thread ko block ni krega , whereas runblocking() blocks the thread
+//      in which it operates
