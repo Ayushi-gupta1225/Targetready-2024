@@ -1,0 +1,24 @@
+globalscope.launch{} --creates coroutines at global level
+  --they are top level coroutines n can survive the entire life of the application
+
+
+globalscope.launch{ file download,play music}
+means global scope me aise kam do jo background me chlte rhe , stop na ho
+
+launch--creates coroutine at local scope
+launch{ login operation , data computation}
+by default use launch fxn
+
+--LAUNCH "fire n forget coroutine builder"
+--launches a new corutine without blocking the current thread
+    it inherits thread thread, n coroutine scope of the intermediate parent corutine
+--it returns a reference to the job object
+--using job object u can JOIN or  CANCEL or wait for it to fnish
+
+
+ --ASYNC
+ --using async we can return data of diff type like int , string etc
+ --launches a new corutine without blocking the current thread
+       it inherits thread thread, n coroutine scope of the intermediate parent corutine
+   --it returns a reference to the Deferred<T> object
+   --using Deferred object u can  CANCEL or wait for it to fnish and also reteive the returned result using AWAIT()
