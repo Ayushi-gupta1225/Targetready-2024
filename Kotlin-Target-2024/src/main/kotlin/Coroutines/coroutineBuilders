@@ -22,3 +22,26 @@ by default use launch fxn
        it inherits thread thread, n coroutine scope of the intermediate parent corutine
    --it returns a reference to the Deferred<T> object
    --using Deferred object u can  CANCEL or wait for it to fnish and also reteive the returned result using AWAIT()
+
+
+CANCELLATION
+to cancel a corutine it shoud be COOPERATIVE
+--job.cancel() -->if the corutine is cooperative then cancel it
+--job.join() --> waits for corutine to finish
+
+--job.cancelAndJoin()-->if the coroutine is cooperative then cancel it else , if its not
+cooperative the wait for the coroutine to finsih
+
+
+what makes a corutine cooperative??
+--periodically invoke suspending fxn that checks g\for cancellation
+-only those suspending fxn that belongs to kotlinx.coroutine package will make
+    corotuine cooperative
+-delay(), yeild(), withcontext() , withTimeout() are suspending fxns  that are coperative
+
+Explicilty check for the cancellation status within the corutine
+        --CoroutineScope.isActive() boolean glag
+
+
+
+
