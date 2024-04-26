@@ -3,6 +3,7 @@ package org.example.Sorting
 
 import kotlin.random.Random
 
+// Implement these sort functionalities on a linked list (singly/doubly)
 fun main() {
     val array = Array(8) { Random.nextInt(100) }
 
